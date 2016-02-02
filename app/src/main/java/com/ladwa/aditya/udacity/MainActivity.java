@@ -65,24 +65,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.spotifystreamer:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.spotify_streamer), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.spotify_streamer));
                 break;
             case R.id.scoreapp:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.scores_app), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.scores_app));
                 break;
             case R.id.libraryapp:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.library_app), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.library_app));
                 break;
             case R.id.builditbigger:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.build_it_bigger), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.build_it_bigger));
                 break;
             case R.id.xyzreader:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.xyz_reader), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.xyz_reader));
                 break;
             case R.id.capstone:
-                Toast.makeText(MainActivity.this, "This Button Will Launch " + getString(R.string.capstone), Toast.LENGTH_SHORT).show();
+                showToast(getString(R.string.capstone));
                 break;
 
         }
+    }
+
+    public void showToast(CharSequence s) {
+        Toast.makeText(getApplicationContext(), getString(R.string.button_launch) + " " + s.toString(), Toast.LENGTH_SHORT).show();
     }
 }
