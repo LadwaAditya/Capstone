@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -15,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
@@ -29,66 +26,66 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/btn_margin"
             android:layout_marginTop="40dp"
-            android:width="250dp"
-            android:layout_margin="10dp"
-            android:background="#F08C35"
+            android:width="@dimen/btn_width"
+            android:background="@color/btn_background"
             android:text="@string/spotify_streamer"
             android:textAllCaps="true" />
 
         <Button
-            android:layout_margin="10dp"
             android:id="@+id/scoreapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:width="250dp"
-            android:background="#F08C35"
+            android:layout_margin="@dimen/btn_margin"
+            android:width="@dimen/btn_width"
+            android:background="@color/btn_background"
             android:text="@string/scores_app"
             android:textAllCaps="true" />
 
         <Button
             android:id="@+id/libraryapp"
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:width="250dp"
-            android:background="#F08C35"
+            android:layout_margin="@dimen/btn_margin"
+            android:width="@dimen/btn_width"
+            android:background="@color/btn_background"
             android:text="@string/library_app"
             android:textAllCaps="true" />
 
         <Button
-            android:layout_margin="10dp"
             android:id="@+id/builditbigger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:width="250dp"
-            android:background="#F08C35"
+            android:layout_margin="@dimen/btn_margin"
+            android:width="@dimen/btn_width"
+            android:background="@color/btn_background"
             android:text="@string/build_it_bigger"
             android:textAllCaps="true" />
 
         <Button
-            android:layout_margin="10dp"
             android:id="@+id/xyzreader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:width="250dp"
-            android:background="#F08C35"
+            android:layout_margin="@dimen/btn_margin"
+            android:width="@dimen/btn_width"
+            android:background="@color/btn_background"
             android:text="@string/xyz_reader"
             android:textAllCaps="true" />
 
         <Button
-            android:layout_margin="10dp"
             android:id="@+id/capstone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:width="250dp"
+            android:layout_margin="@dimen/btn_margin"
+            android:width="@dimen/btn_width"
             android:background="@android:color/holo_red_dark"
             android:text="@string/capstone"
             android:textAllCaps="true" />
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>
